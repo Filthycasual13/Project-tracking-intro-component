@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+$mainRed: hsl(0, 100%, 68%);
+$veryDarkBlue: hsl(230, 29%, 20%);
+$grayishBlue: hsl(230, 11%, 40%);
+$veryGrayishBlue: hsl(231, 7%, 65%);
+$lightGrayishBlue: hsl(207, 33%, 95%);
+$headCallsNav: 'Barlow Condensed' , sans-serif;
+$bodyFont: 'Barlow', sans-serif;
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 150px 0 100px;
+    
+
+    ul {
+        font-size: 22px;
+        font-family: $headCallsNav;
+        font-weight: 700;
+        list-style: none;
+        text-transform: uppercase;
+    
+
+        li {
+            display: inline;
+            padding: 0 15px 0 15px;
+           
+
+            #login {
+                padding-left: 50px;
+                color: $grayishBlue;
+            }
+
+            a {
+                color: $veryDarkBlue;
+                text-decoration: none;
+
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 100px;
+
+    .left {
+        width: 500px;
+        padding-left: 100px;
+        font-size: 18px;
+        
+
+        .new {
+            background-color: $veryDarkBlue;
+            color: white;
+            padding: 2px 6px 2px 6px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-family: $bodyFont;
+        }
+        .mono {
+            color: $grayishBlue;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-left: 8px;
+            font-weight: 400;
+            font-family: $bodyFont;
+        }
+
+        h1 {
+            font-family: $headCallsNav;
+            font-size: 3.5em;
+            font-weight: 700;
+            color: $veryDarkBlue;
+            text-transform: uppercase;
+        }
+
+        p {
+            position: relative;
+            bottom: 20px;
+            color: $grayishBlue;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $bodyFont;
+        }
+
+        .prev {
+            color: $grayishBlue;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-left: 8px;
+            font-weight: 400;
+            font-family: $bodyFont;
+        }
+
+        .btn {
+            color: white;
+            background-color: $mainRed;
+            padding: 10px 22px 10px 22px;
+            border: none;
+            font-size: 1em;
+            font-family: $headCallsNav;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            &:hover {
+                background-color: #ff7474;
+            }
+        }
+    }
+
+    .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $lightGrayishBlue;
+        width: 750px;
+        height: 350px;
+        border-bottom-left-radius: 50px;
+        z-index: -2;
+
+        img {
+            position: absolute;
+            top: 170px;
+            left: 55px;
+        }
+    }
+}
