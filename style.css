@@ -249,4 +249,20 @@ body {
     color: #5b5f71;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .main .left {
+    top: 380px;
+  }
+  .main .right {
+    width: 220px;
+    height: 550px;
+  }
+  .main .right img {
+    top: 80px;
+    right: 0;
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+}
 /*# sourceMappingURL=style.css.map */
