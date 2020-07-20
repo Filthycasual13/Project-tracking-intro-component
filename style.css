@@ -264,5 +264,10 @@ body {
     -webkit-transform: scale(0.65);
             transform: scale(0.65);
   }
+  .links {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
